@@ -75,3 +75,86 @@ Espacios que se utilizan en programación para dar jerarquía y mayor legibilida
   <img src="gato.jpg" alt="Un gato naranja">
   <figcaption>Este es mi gato Garfield durmiendo</figcaption>
 </figure>
+
+## Form ##
+- Acá empezamos con los formularios que sirven para enviar la información de un usuario y que se envía a un servidor.
+
+**Ejemplo:**
+<form action="https://freecatphotoapp.com/submit-cat-photo">
+  <!-- Aquí van los campos del formulario -->
+</form>
+
+- **action**: En este caso, action es un atributo, y este atributo nos indica hacía donde va dirigida la información que se envía mediante el formulario. 
+- **Sin action**: Si no especificas una URL, el formulario se envía a la misma página actual, pero esto generalmente no es útil porque la página no está preparada para procesar esos datos.
+- **Con action específico**: Los datos van al destino correcto donde hay código del servidor esperando procesarlos.
+
+📅 4 de junio de 2025
+
+## FORM: label ##
+- El label es una etiqueta descriptiva que se enlaza con el input y sirve para dar un orden al código y para temas de accesibilidad. 
+<label> <input type="text"> </label>
+
+## FORM: id ##
+- El id es darle un nombre y apellido a la información que va a enviar el input, y también para darle estilo y funcionamiento mediante css/js
+<label> <input type="text" id="nombre-de-mascota">Nombre de Mascota</label>
+
+## FORM: name ##
+- **Propósito:** Identifica y agrupa elementos del formulario.
+- **Funciones clave:**
+  - Agrupa elementos relacionados (ej: `radio` buttons con el mismo `name`)
+  - Nombre del campo al enviar datos al servidor (aparece en `nombre=valor`)
+  - Mejora UX al permitir selección única en `radio` buttons
+
+## FORM: value ##
+- **Propósito:** Define valores para diferentes tipos de campos.
+
+### Comportamiento según tipo de campo:
+1. **Campos editables** (`text`, `email`, `number`, etc.):
+   - Valor inicial mostrado
+   - Puede ser modificado por el usuario
+   - Ejemplo:
+     ```html
+     <input type="text" name="user" value="Negrito">
+     ```
+
+2. **Opciones seleccionables** (`radio`, `checkbox`, `select`):
+   - Valor oculto que se envía al servidor
+   - No es lo mismo que el texto visible
+   - Ejemplos:
+     ```html
+     <input type="radio" name="sistema" value="windows"> Windows
+     <input type="checkbox" name="color" value="azul"> Azul
+     ```
+
+3. **Botones** (`submit`, `button`, `reset`):
+   - Texto que muestra el botón
+   - En botones de submit con `name`, también se envía el valor
+   - Ejemplo:
+     ```html
+     <input type="submit" value="Enviar">
+     ```
+
+### Excepciones:
+- `type="file"`: No usa `value` (envía el archivo seleccionado)
+  ```html
+  <input type="file" name="documento">
+
+## FORM: fieldset ##
+- Es un elemento que sirve para agrupar `input` y `label`.
+
+## FORM: legend ##
+- Es un elemento que actua como el tidulo del fieldset es una etiqueta con apertura y cierre.
+
+## FORM: Atributo `for` en etiquetas `<label>`
+
+### 📌 Definición
+El atributo `for` en un elemento `<label>` crea una conexión explícita entre:
+- La descripción textual (lo que ve el usuario)
+- El campo de formulario asociado (input, select, textarea)
+
+### 🔍 ¿Cómo funciona?
+```html
+<!-- Ejemplo básico para freecodecamp, en practica primero va el label-->
+<input type="checkbox" id="terminos">
+<label for="terminos">Acepto los términos y condiciones</label>
+
