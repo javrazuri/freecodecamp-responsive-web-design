@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+</head>
+<body>
+    <main>
+      <h1>Mi Portafolio Profesional: Jav Rázuri-Ruiz</h1>
+      
+      <!-- Sección: Sobre mí -->
+      <section>
+        <h2>Sobre Mí</h2>
+        <p>¡Hola! Soy <a href="#contacto">Javier Rázuri</a>, desarrollador web en formación.</p>
+        <p>Conoce más sobre <a target="_blank" href="https://github.com/javrazuri">mi experiencia profesional</a>.</p>
+        <a href="https://www.instagram.com/javrazuri/"><img src="https://1.gravatar.com/avatar/9fb040392792ce2580e763e78d72c024d0b8d5eb2979d73ee90914ab002aab14?size=256&d=initials" alt="Foto profesional de [Tu Nombre]"></a>
+      </section>
+      
+      <!-- Sección: Habilidades -->
+      <section>
+        <h2>Mis Habilidades</h2>
+        <h3>Tecnologías que domino:</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+        </ul>
+        <figure>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/The.Matrix.glmatrix.2.png]" alt="Captura de un proyecto de código">
+          <figcaption>Proyectos con <em>buenas prácticas</em>.</figcaption>  
+        </figure>
+        
+        <h3>En proceso de aprendizaje:</h3>
+        <ol>
+          <li>React.js</li>
+          <li>Node.js</li>
+          <li>Git/GitHub</li>
+        </ol>
+      </section>
+      
+      <!-- Sección: Contacto -->
+      <section id="contacto">
+        <h2>Formulario de Contacto</h2>
+        <form action="https://github.com/javrazuri">
+          <fieldset>
+            <legend>Tipo de consulta</legend>
+            <label><input id="trabajo" type="radio" name="tipo-consulta" value="trabajo" checked> Oferta laboral</label>
+            <label><input id="colab" type="radio" name="tipo-consulta" value="colab"> Colaboración</label>
+          </fieldset>
+          
+          <fieldset>
+            <legend>Áreas de interés</legend>
+            <input id="frontend" type="checkbox" name="intereses" value="frontend" checked> <label for="frontend">Frontend</label>
+            <input id="backend" type="checkbox" name="intereses" value="backend"> <label for="backend">Backend</label>
+            <input id="fullstack" type="checkbox" name="intereses" value="fullstack"> <label for="fullstack">Fullstack</label>
+          </fieldset>
+          
+          <input type="email" name="email" placeholder="Tu correo electrónico" required>
+          <textarea name="mensaje" placeholder="Tu mensaje"></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    
+    <footer>
+      <p>
+        © 2023 - Creado con ❤️ por [Tu Nombre] | 
+        <a href="https://github.com/javrazuri">Mi GitHub</a>
+      </p>
+    </footer>
+</body>
+</html>
