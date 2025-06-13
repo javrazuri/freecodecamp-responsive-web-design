@@ -1,7 +1,16 @@
-h1, h2, p {
-    text-align: center;
+body {
+  /*
+  background-color: burlywood;
+  */
 }
 
-body {
-    background-color: brown;
+h1, h2, p {
+  text-align: center;
+}
+
+.menu {
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
 }
