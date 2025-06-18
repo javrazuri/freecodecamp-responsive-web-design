@@ -46,3 +46,33 @@ Es una etiqueta genérica que sirve para agrupar cosas en el HTML, normalmente p
 ### 💡 Consejo adicional:
 
 > Si vas a usar JavaScript para manipular elementos, las **clases** son más flexibles, mientras que los **ids** te permiten seleccionar rápidamente un elemento con `document.getElementById("menu")`.
+
+### 18 de junio de 2025 - CSS
+# Anotaciones de CSS: Selectores Específicos (Clase + Elemento)
+
+## Concepto Clave: Selectores Descendentes (`.clase elemento`)
+
+Cuando usamos un selector que combina una clase y un elemento, como por ejemplo:
+
+`.nombre-de-la-clase etiqueta-html`
+
+...lo que estamos haciendo es ser **muy específicos** con qué elementos HTML queremos aplicar un estilo.
+
+### ¿Qué significa exactamente?
+
+Este tipo de selector le dice a CSS:
+
+- **"Encuentra cualquier elemento que tenga la clase `nombre-de-la-clase`."**
+- **"Y, *dentro* de ese elemento (o de cualquier descendiente suyo), encuentra todos los `etiqueta-html`."**
+- **"Solo a *esos* elementos `etiqueta-html` (los que están dentro de la clase especificada) se les aplicarán los estilos definidos."**
+
+### Ejemplo práctico:
+
+Imagina este HTML:
+
+```html
+<div class="contenedor-principal">
+  <p>Este párrafo es azul.</p>
+</div>
+
+<p>Este párrafo NO es azul.</p>
