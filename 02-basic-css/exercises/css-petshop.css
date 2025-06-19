@@ -1,0 +1,40 @@
+body {
+  background-color: #f0ead6;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.menu {
+  width: 80%;
+  background-color: #f5f3f2;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 500px; /* Evita que se estire demasiado */
+  border-radius: 30px;
+}
+
+h1, h2, p {
+  text-align: center;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between; /* Alinea los elementos a los extremos */
+  padding: 10px 0;
+  border-bottom: 1px dotted #dfdfe2;
+}
+
+.flavor {
+  width: 75%; /* Ocupa la mayor parte del espacio */
+  text-align: left;;
+}
+
+.price {
+  width: 25%; /* Ocupa el espacio restante */
+  text-align: right; /* Alinea el precio a la derecha */
+}
+
+/* Opcional: Estilo para el último elemento para quitar la línea inferior */
+.item:last-child {
+  border-bottom: none;
+}
