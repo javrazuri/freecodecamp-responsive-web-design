@@ -138,3 +138,42 @@ Aquí es donde entra `max-width: 500px;` (en el caso de tu menú):
 ### En resumen:
 
 `max-width` es clave para el **diseño responsivo**. Asegura que tus elementos sean flexibles y ocupen un porcentaje del espacio disponible, pero los **limita** a un tamaño máximo para que no se vean raros o ilegibles en pantallas muy grandes. Ayuda a que tu diseño se vea bien en cualquier dispositivo.
+
+
+### 20 de junio de 2025 - CSS
+
+# Anotaciones de CSS: `linear-gradient` y `color-stops`
+
+## Entendiendo `color-stops` en `linear-gradient`
+
+En el Paso 54, estamos trabajando con la función CSS `linear-gradient()`, que nos permite crear transiciones suaves entre dos o más colores. Hasta ahora, probablemente has visto cómo simplemente nombrar colores para que hagan una transición gradual (ej., `linear-gradient(red, blue)`).
+
+Los **`color-stops`** son como "puntos de control" o "marcadores de distancia" a lo largo de la línea del degradado. Te permiten especificar **exactamente dónde debe terminar un color y empezar el siguiente**, o dónde debe estar un color en su máxima saturación antes de empezar a mezclarse.
+
+### ¿Cómo funcionan los `color-stops`?
+
+- Se añaden **después del nombre del color** dentro de la función `linear-gradient()`.
+- Pueden ser unidades de **longitud** (como `px`, `em`, `rem`) o, más comúnmente, **porcentajes** (`%`).
+- Indican la **posición en la línea del degradado** donde ese color específico debe estar completamente presente o donde la transición a él debe finalizar/comenzar.
+
+### Ejemplo de `linear-gradient(90deg, red 90%, black)`:
+
+Imagina una línea que va de izquierda a derecha (por el `90deg`):
+
+1.  **`red`**: El degradado comienza con rojo puro desde el inicio (0%).
+2.  **`red 90%`**: Le estás diciendo al navegador: "Mantén el **rojo puro hasta el 90%** de la línea del degradado." Esto significa que la transición de rojo a negro no comenzará hasta que lleguemos al 90% del camino.
+3.  **`black`**: El negro empezará a aparecer (o más bien, la transición a negro finalizará) al final del degradado (100%).
+
+**Resultado visual:** La mayor parte del degradado será rojo, y solo en el último 10% de la línea verás la transición de rojo a negro.
+
+### Aplicación en el Paso 54: `linear-gradient(red 75%, green, blue)`
+
+En tu ejercicio, te piden añadir `75%` como `color-stop` solo al primer color (red).
+
+`linear-gradient(red 75%, green, blue)`:
+
+- **`red 75%`**: El degradado comenzará con rojo puro y **el rojo se mantendrá puro hasta el 75%** de la línea del degradado.
+- **`green`**: A partir del 75%, el color empezará a hacer una transición **del rojo al verde**. Como no tiene su propio `color-stop`, el navegador asumirá que el verde debe estar puro a medio camino entre el `75%` y el `blue` (que por defecto estaría al 100%).
+- **`blue`**: El color seguirá la transición del verde al azul, estando el azul puro al final del degradado (100%).
+
+**Lo importante:** El `75%` después del `red` "empuja" el inicio de la transición de los otros colores mucho más allá, haciendo que el rojo ocupe la mayor parte del degradado.
