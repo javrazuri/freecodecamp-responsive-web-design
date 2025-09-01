@@ -155,6 +155,16 @@ footer {
   justify-content: center;
 }
 
+footer,
+footer a {
+  color: #dfdfe2;
+}
+
+address {
+  text-align: center;
+  padding: 0.3em;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -164,4 +174,3 @@ footer {
   clip-path: inset(50%);
   white-space: nowrap;
 }
-
