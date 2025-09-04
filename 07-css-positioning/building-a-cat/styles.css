@@ -5,3 +5,10 @@
 body {
   background-color: #c9d2fc;
 }
+
+.cat-head{
+  width: 220px;
+  height:200px;
+  border: 1px solid #000;
+  border-radius: 46%;
+}
