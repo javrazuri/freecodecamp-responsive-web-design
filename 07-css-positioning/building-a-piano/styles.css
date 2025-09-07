@@ -31,6 +31,7 @@ html {
   height: 175px;
   margin: 2px;
   float: left;
+   overflow: hidden;
 }
 
 .key.black--key::after {
@@ -47,4 +48,18 @@ html {
   width: 200px;
   position: absolute;
   top: 23px;
+}
+
+@media (max-width: 768px) {
+  #piano {
+    width: 358px;
+  }
+
+  .keys {
+    width: 318px;
+  }
+
+  .logo {
+    width: 150px;
+  }
 }
