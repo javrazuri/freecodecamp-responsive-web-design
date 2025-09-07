@@ -97,7 +97,7 @@ body {
 .cat-left-inner-eye {
   position: absolute;
   top: 8px;
-  left: 2px;
+  left: 20px;
   width: 10px;
   height: 20px;
   transform: rotate(10deg);
@@ -107,8 +107,8 @@ body {
 
 .cat-right-inner-eye {
   position: absolute;
-  top: 8px;
-  left: 18px;
+  top: 12px;
+  left: 2px;
   transform: rotate(-5deg);
   width: 10px;
   height: 20px;
