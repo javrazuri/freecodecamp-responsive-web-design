@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentación Técnica de Python</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="navbar">
+    <header>Python Básico</header>
+    <a class="nav-link" href="#Introducción_a_Python">Introducción a Python</a>
+    <a class="nav-link" href="#Sintaxis_Básica">Sintaxis Básica</a>
+    <a class="nav-link" href="#Tipos_de_Datos">Tipos de Datos</a>
+    <a class="nav-link" href="#Estructuras_de_Control">Estructuras de Control</a>
+    <a class="nav-link" href="#Funciones_en_Python">Funciones en Python</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introducción_a_Python">
+      <header>Introducción a Python</header>
+      <p>Python es un lenguaje de programación de alto nivel, interpretado y de propósito general. Su filosofía enfatiza la legibilidad del código, lo que lo hace ideal para principiantes.</p>
+      <p>Fue creado por Guido van Rossum y lanzado por primera vez en 1991. Desde entonces, ha crecido en popularidad debido a su simplicidad y versatilidad.</p>
+      <code>print("¡Hola, mundo!")</code>
+      <p>Este sencillo comando muestra texto en la consola, y es tradicionalmente el primer programa que se escribe al aprender un nuevo lenguaje.</p>
+    </section>
+
+    <section class="main-section" id="Sintaxis_Básica">
+      <header>Sintaxis Básica</header>
+      <p>Python utiliza la indentación (espacios o tabulaciones) para definir bloques de código, en lugar de llaves <code>{}</code> como en otros lenguajes.</p>
+      <code>if 5 > 2:
+    print("Cinco es mayor que dos")</code>
+      <p>La indentación es obligatoria. Si no se respeta, Python arrojará un error.</p>
+      <ul>
+        <li>Las líneas no terminan con punto y coma.</li>
+        <li>Los comentarios se escriben con <code>#</code>.</li>
+        <li>Las cadenas pueden usar comillas simples o dobles.</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Tipos_de_Datos">
+      <header>Tipos de Datos</header>
+      <p>Python tiene tipos de datos dinámicos. No necesitas declarar el tipo de una variable al crearla.</p>
+      <code>x = 5        # int
+y = "Hola"   # str
+z = True     # bool</code>
+      <p>Algunos tipos de datos comunes incluyen:</p>
+      <ul>
+        <li><code>int</code> - Números enteros</li>
+        <li><code>float</code> - Números decimales</li>
+        <li><code>str</code> - Cadenas de texto</li>
+        <li><code>list</code> - Listas (arreglos modificables)</li>
+        <li><code>bool</code> - Booleanos (<code>True</code> o <code>False</code>)</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Estructuras_de_Control">
+      <header>Estructuras de Control</header>
+      <p>Permiten controlar el flujo de ejecución del programa.</p>
+      <p>Ejemplo de estructura <code>if-else</code>:</p>
+      <code>edad = 18
+if edad >= 18:
+    print("Eres mayor de edad")
+else:
+    print("Eres menor de edad")</code>
+      <p>Ejemplo de bucle <code>for</code>:</p>
+      <code>for i in range(5):
+    print(i)</code>
+      <ul>
+        <li>El bucle <code>for</code> itera sobre secuencias.</li>
+        <li>El bucle <code>while</code> se repite mientras una condición sea verdadera.</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Funciones_en_Python">
+      <header>Funciones en Python</header>
+      <p>Una función es un bloque de código reutilizable que realiza una tarea específica.</p>
+      <code>def saludar(nombre):
+    return "Hola, " + nombre
+
+mensaje = saludar("Ana")
+print(mensaje)</code>
+      <p>Características clave:</p>
+      <ul>
+        <li>Se definen con la palabra clave <code>def</code>.</li>
+        <li>Pueden recibir parámetros y devolver valores.</li>
+        <li>Las funciones mejoran la modularidad y reutilización del código.</li>
+      </ul>
+      <p>Python también permite funciones anónimas con <code>lambda</code>:</p>
+      <code>doble = lambda x: x * 2
+print(doble(5))  # Imprime 10</code>
+    </section>
+  </main>
+</body>
+</html>
