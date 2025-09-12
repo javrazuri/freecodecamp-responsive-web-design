@@ -36,6 +36,12 @@ body {
   align-items: center;
 }
 
+.window-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 /* BACKGROUND BUILDINGS - "bb" stands for "background building" */
 .bb1 {
   width: 10%;
@@ -125,6 +131,12 @@ body {
   width: 100%;
   height: 85%;
   background-color: var(--building-color4);
+}
+
+.bb4-window {
+  width: 18%;
+  height: 90%;
+  background-color: var(--window-color4);
 }
 
 /* FOREGROUND BUILDINGS - "fb" stands for "foreground building" */
