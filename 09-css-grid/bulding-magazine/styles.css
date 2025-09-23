@@ -113,3 +113,7 @@ hr {
   font-family: "Raleway", sans-serif;
 
 }
+
+.text-with-images {
+  display:grid;
+}
