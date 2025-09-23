@@ -118,4 +118,10 @@ hr {
   display: grid;
   grid-template-columns: 1fr 2fr;
   column-gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.lists {
+  list-style-type: none;
+  margin-top: 2rem;
 }
