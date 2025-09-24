@@ -7,6 +7,13 @@ body {
   overflow: hidden;
 }
 
+.penguin {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  margin-top: 75px;
+}
+
 .ground {
   width: 100vw;
   height: 400px;
